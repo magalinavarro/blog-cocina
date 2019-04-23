@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- falta linkear a css-->
+
+</head>
+
+<body>
+
+    <!-- ______________________________________Header___________________________________________-->
+    <header>
+
+        <div class="header-container">
+            <div class="main-menu">
+                <h1>Mi blog de cocina</h1>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="recepies.html">PLATOS</a></li>
+                        <i class="fas fa-sort-down"></i>
+                        <li>SOBRE MI</li> <!-- acá va id, pasar a Maga dsps el link para recepies-->
+                        <li>CONTACTO</li>
+                        <!--acá también-->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <!-- ______________________________________Content___________________________________________-->
+    <div class="content">
+        <div class=slider>
+            <ul>
+                <li><img src="img/img-home/img-1.jpg"></li>
+                <li><img src="img/img-home/img-2.jpg"></li>
+                <li><img src="img/img-home/img-3.jpg"></li>
+                <li><img src="img/img-home/img-4.jpg"></li>
+            </ul>
+        </div>
+<!-- Acá comienza la columna grande contenedora, que incluye el footer-->
+        <div class="big-column">
+            <div class="secondary-menu">
+                <ul>
+                    <li>
+                        <img src="img/img-recepies/recetas.JPG">
+                        <div class="button1">RECETAS</p>
+                    </li>
+                    <li>
+                        <img src="img/img-home/platos.jpeg">
+                        <div class="button1">PLATOS</p>
+                    </li>
+                    <li>
+                        <img src="img/img-home/exoticos.JPG">
+                        <div class="button1">EXOTICOS</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+<!-- En esta parte la columna se divide entre main (video y noticias de recetas) y aside (perfil)-->
+        <div class="columns-container">
+
+<!--Main-->
+            <main>
+
+                <!--Video-->
+               <video></video> <!--Poner video!-->
+
+
+               <!--Noticias de recetas-->
+                <div class="news-container">
+                    <div class="news">
+                        <div class="info-details">
+                            <h4>By Maria | Mayo 19, 2017</h4>
+                        </div>
+                        <div class="info-details">
+                            <i class="far fa-heart"></i>
+                            <h4>20</h4>
+                            <i class="far fa-comments"></i>
+                            <h4>10</h4>
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+
+                        <div class="news-content">
+                            <img src="img/img-home/nota1.JPG">
+                            <div class="news-text">
+                                <h5>Delicias dulces</h5>
+                                <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
+                            </div>
+                        </div>
+
+                        <div class="news">
+                            <div class="info-details">
+                                <h4>By Maria | Mayo 19, 2017</h4>
+                            </div>
+                            <div class="info-details">
+                                <i class="far fa-heart"></i>
+                                <h4>20</h4>
+                                <i class="far fa-comments"></i>
+                                <h4>10</h4>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="news-content">
+                                    <img src="img/img-home/nota2.JPG">
+                                    <div class="news-text">
+                                        <h5>Comidas simples</h5>
+                                        <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+            </main>
+<!--Aside-->
+
+            <aside>
+                <div class="profile">
+                    
+                    <h6 class="lead">SOBRE MI</h6>
+                    <img src="img/img-home/perfil.jpg">
+                    <div class="profile-description">
+                        <h7>Natalia Guida</h7>
+                        <p>Tengo 23 años, hace dos que estudio cocina y soy fanática de la comida. Espero que les guste mi contenido.</p>
+
+                    </div>
+                    <h6 class="lead">NEWSLETTER</h6>
+                
+                </div>
+            </aside>
+
+        </div>
+<!-- Se cierra la división de la columna principal en main/aside-->
+        
+        <!-- ______________________________________Footer___________________________________________-->
+        <footer>
+            <div class="footer-container">
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i>FACEBOOK</li>
+                    <li><i class="fab fa-twitter"></i>TWITTER</a></li>
+                    <li><i class="fab fa-google-plus-g"></i>GOOGLE+</li>
+                    <li><i class="fab fa-linkedin"></i>LINKEDIN</li>
+                    <li><i class="fab fa-instagram"></i>INSTAGRAM</li>
+                </ul>
+            </div>
+        </footer>
+</body>
+
+</html>
