@@ -1,14 +1,15 @@
-.footer-container {
+.footer-container ul {
     display: flex;
-    
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-}
-
-li {
     color: $main-color;
+    justify-content: space-between;
+    list-style: none;
+    font-size: $paragraph-size;
+        a {
+            text-decoration: none;
+            color: $main-color;
+                i {
+                    margin: 0 10px;
+                }
+           
+        }
 }

@@ -14,13 +14,24 @@ En los tamaños de fuente puse al tanteo, dsps lo vamos ajustando*/
 /* Títulos de noticias y algunos más*/
 /*Para la mayoría del texto y creo que también para losíconos*/
 /*Para botones y cintillos, tipo Sobre mí y Newsletter*/
-.footer-container {
-  display: flex;
-}
 .footer-container ul {
   display: flex;
-  flex-direction: row;
+  color: #686666;
   justify-content: space-between;
+  list-style: none;
+  font-size: 16px;
+}
+.footer-container ul a {
+  text-decoration: none;
+  color: #686666;
+}
+.footer-container ul a i {
+  margin: 0 10px;
+}
+
+#home {
+  font-family: "IBM Plex Mono", monospace;
+  color: #686666;
 }
 
 /*# sourceMappingURL=main.css.map */
