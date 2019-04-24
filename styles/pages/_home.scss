@@ -32,14 +32,67 @@
 
                                             img {
                                                 width: 100%;
-                                                height: 500px;
+                                                
                                                 
                                             }
                                         }
                                         
                                     }
         
-                                }
+            }
+       
+                                
+.slider-text {
+          display: none;
+          position: absolute;
+          background-color: $secondary-color;
+          opacity: .7;
+          height: 110px;
+         
+          flex-direction: column;
+          align-items: flex-start;
+
+                             p {
+                                margin: 30px 0 10px 10px;
+                                padding: 0;
+                        font-size: 11px;
+                        color: white;
+                        opacity: 1.0;
+                        
+                    }
+
+                    h5 {
+                        margin: 0 0 10px 10px;
+                        padding: 0;
+                        font-size: 15px;
+                        color: white;
+                        opacity: 1.0;
+                    }
+
+          
+          
+             }
+
+
+            
+.slider-image{
+         display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+
+
+            img {height: 100%;
+
+            }
+            
+            &:hover .slider-text {
+                display: flex;
+            }
+
+            }   
+            
+            
 /* Menú secundario*/
 
 .big-column {
@@ -74,7 +127,6 @@
                                             img {
                                                     width: 100%;
                                                     margin: 0;
-                                                    height: 250px;
                                                     border-radius: 20%;
                                                 }
                                             .button1 {
@@ -91,6 +143,10 @@
 
 }
 
+
+
+
+
 /* Main, generalidades */
 
 .columns-container {
@@ -105,13 +161,16 @@ main {
 
 /* Video */
 .video-container {
-    width: 800px;
-
+    width: 100%;
+    
 }
 .video {
     
     width: 100%;
-    height: 500px;
+    height: 450px;
+    
+
+
 }
 
 .video-description {
@@ -163,45 +222,59 @@ main {
 
 }
 
-/* Aside*/
+/* Aside (aboutme)*/
 
 
-aside {
-    width: 400px;
-    height: 700px;
-    
-}
 
 #aboutme {
-    height: 100%;
+    width: 30%;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+
+                img {
+                    border-radius: 50%;
+                    width: 70%;
+                }
     
 }
 
 .profile-description {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     
     
 
 }
+
+
+
+
+
+.lead {
+    background-color: $items-color;
+    width: 100%;
+    text-align: center;
+    font-size: $medium-size;
+    color: $title-color;
+
+            
+    
+}
+
+
+/* Footer */
+
+
 
 footer {
     margin-top: 70px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

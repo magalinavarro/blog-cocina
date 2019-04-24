@@ -20,6 +20,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -27,6 +28,16 @@ a {
 }
 
 img {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+i {
   margin: 0;
   padding: 0;
 }
@@ -56,17 +67,23 @@ img {
   background-color: white;
   height: 25px;
   width: 160px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   line-height: normal;
+  font-weight: bold;
 }
 
-.lead {
-  background-color: #f7c9d0;
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
-  color: black;
+.button1:hover {
+  background-color: #e98a4b;
+  cursor: pointer;
 }
 
 i {
@@ -100,7 +117,8 @@ a {
   /* Main, generalidades */
   /* Video */
   /* Noticias de recetas */
-  /* Aside*/
+  /* Aside (aboutme)*/
+  /* Footer */
 }
 
 #home .content {
@@ -145,7 +163,60 @@ a {
 
 #home .slider ul li img {
   width: 100%;
-  height: 500px;
+}
+
+#home .slider-text {
+  display: none;
+  position: absolute;
+  background-color: #e98a4b;
+  opacity: .7;
+  height: 110px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#home .slider-text p {
+  margin: 30px 0 10px 10px;
+  padding: 0;
+  font-size: 11px;
+  color: white;
+  opacity: 1.0;
+}
+
+#home .slider-text h5 {
+  margin: 0 0 10px 10px;
+  padding: 0;
+  font-size: 15px;
+  color: white;
+  opacity: 1.0;
+}
+
+#home .slider-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#home .slider-image img {
+  height: 100%;
+}
+
+#home .slider-image:hover .slider-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #home .big-column {
@@ -199,7 +270,6 @@ a {
 #home .secondary-menu ul li img {
   width: 100%;
   margin: 0;
-  height: 250px;
   border-radius: 20%;
 }
 
@@ -221,12 +291,12 @@ a {
 }
 
 #home .video-container {
-  width: 800px;
+  width: 100%;
 }
 
 #home .video {
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
 #home .video-description {
@@ -294,13 +364,9 @@ a {
   margin-bottom: 0px;
 }
 
-#home aside {
-  width: 400px;
-  height: 700px;
-}
-
 #home #aboutme {
-  height: 100%;
+  width: 30%;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +374,18 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+}
+
+#home #aboutme img {
+  border-radius: 50%;
+  width: 70%;
 }
 
 #home .profile-description {
@@ -318,6 +396,18 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#home .lead {
+  background-color: #f7c9d0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: black;
 }
 
 #home footer {
