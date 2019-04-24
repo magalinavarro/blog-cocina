@@ -1,11 +1,14 @@
 .footer-container {
     display: flex;
+    
     ul {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        
     }
 }
 
-i {
-    color: red
+li {
+    color: $main-color;
 }
