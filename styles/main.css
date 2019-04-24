@@ -14,7 +14,6 @@ En los tamaños de fuente puse al tanteo, dsps lo vamos ajustando*/
 /* Títulos de noticias y algunos más*/
 /*Para la mayoría del texto y creo que también para losíconos*/
 /*Para botones y cintillos, tipo Sobre mí y Newsletter*/
-<<<<<<< HEAD
 .footer-container {
   display: flex;
 }
@@ -59,7 +58,6 @@ li {
 }
 
 /*# sourceMappingURL=main.css.map */
-=======
 body {
   margin: 0;
 }
@@ -370,4 +368,3 @@ a {
   margin-top: 70px;
 }
 /*# sourceMappingURL=main.css.map */
->>>>>>> 20e0b578a94ee677884f8aee979d35aaa5f45ce7
