@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css"></link>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </link>
 
 </head>
 
@@ -25,11 +26,10 @@
                 <nav>
                     <ul>
                         <li><a href="home.html">HOME</a></li>
-                        <li><a href="recepies.html">PLATOS</a></li>
-                        <i class="fas fa-sort-down"></i>
-                        <li>SOBRE MI</li> <!-- acá va id, pasar a Maga dsps el link para recepies-->
-                        <li>CONTACTO</li>
-                        <!--acá también-->
+                        <li><a href="recepies.html">PLATOS <i class="fas fa-sort-down"></i></a></li>
+                        <li><a href="#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -38,12 +38,12 @@
     </header>
 
     <!-- ______________________________________Content___________________________________________-->
-   
+
     <div class="content">
 
         <div class=slider>
             <ul>
-                <li><img src="img/img-home/img-1.jpg"></li>
+                <li><a href="recepies.html"></a><img src="img/img-home/img-1.jpg"></a></li>
                 <li><img src="img/img-home/img-2.jpg"></li>
                 <li><img src="img/img-home/img-3.jpg"></li>
                 <li><img src="img/img-home/img-4.jpg"></li>
@@ -51,88 +51,95 @@
         </div>
 
         <!-- Acá comienza la columna grande contenedora, que incluye el footer-->
-        
+
         <div class="big-column">
-           
+
             <div class="secondary-menu">
                 <ul>
-                    <li>
-                        <img src="img/img-recepies/recetas.JPG">
-                        <div class="button1">RECETAS</p>
-                    </li>
+
                     <li>
                         <img src="img/img-home/platos.jpeg">
-                        <div class="button1">PLATOS</p>
+                        <a href="recepies.html" class="button1">
+                            <div>PLATOS</div>
+                        </a>
                     </li>
                     <li>
+                        <img src="img/img-recepies/recetas.JPG">
+                        <div class="button1">RECETAS</div>
+                    </li>
+
+                    <li>
                         <img src="img/img-home/exoticos.JPG">
-                        <div class="button1">EXOTICOS</p>
+                        <div class="button1">EXOTICOS</div>
                     </li>
                 </ul>
 
             </div>
-        </div>
 
-        <!-- En esta parte la columna se divide entre main (video y noticias de recetas) y aside (perfil)-->
-        <div class="columns-container">
 
-            <!--Main-->
-            <main>
+            <!-- En esta parte la columna se divide entre main (video y noticias de recetas) y aside (perfil)-->
+            <div class="columns-container">
 
-                <!--Video-->
-                <section class="video">
+                <!--Main-->
+                <main>
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jc8vDax6zZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!--Video-->
+                    <section class="video-container">
 
-                </section>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jc8vDax6zZQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="video"></iframe>
+                        <div class="video-description"> 20 de abril | ¿Cómo preparar las mejores hamburguesas?</div>
+
+                    </section>
+
+
+                    <!--Noticias de recetas-->
+
+                    <section class="news-container">
+
+                        <article class="news">
+                            
+                            <div class="news-content">
+                                <img src="img/img-home/nota1.JPG">
+                                <div class="news-text">
+                                        <div class="news-info">
+                                                <div class="info-details">
+                                                    <div>By Maria | Mayo 19, 2017</div>
+                                                </div>
                 
-
-                <!--Noticias de recetas-->
-
-                <section class="news-container">
-                   
-                    <article class="news">
-                        
-                        <div class="info-details">
-                            <h4>By Maria | Mayo 19, 2017</h4>
-                        </div>
-
-                        <div class="info-details">
-                            <i class="far fa-heart"></i>
-                            <h4>20</h4>
-                            <i class="far fa-comments"></i>
-                            <h4>10</h4>
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-
-                        <div class="news-content">
-                            <img src="img/img-home/nota1.JPG">
-                            <div class="news-text">
-                                <h5>Delicias dulces</h5>
-                                <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
-                            </div>
-                        </div>
-
-                    </article>
-
-                    <article class="news">
-
-                            <div class="info-details">
-                                <h4>By Maria | Mayo 19, 2017</h4>
+                                                <div class="comments-info">
+                                                    <i class="far fa-heart"></i>
+                                                    <span>20</span><i class="far fa-comments"></i>
+                                                    <span>10</span>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                            </div>
+                                    <h6>Delicias dulces</h6>
+                                    <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
+                                </div>
                             </div>
 
-                            <div class="info-details">
-                                <i class="far fa-heart"></i>
-                                <h4>20</h4>
-                                <i class="far fa-comments"></i>
-                                <h4>10</h4>
-                                <i class="fas fa-share-alt"></i>
-                            </div>
+                        </article>
 
+                        <article class="news">
+                            
                             <div class="news-content">
                                 <img src="img/img-home/nota2.JPG">
                                 <div class="news-text">
-                                    <h5>Comidas simples</h5>
+                                        <div class="news-info">
+                                                <div class="info-details">
+                                                    <div>By Maria | Mayo 19, 2017</div>
+                                                </div>
+                
+                                                <div class="comments-info">
+                                                    <i class="far fa-heart"></i>
+                                                    <span>20</span><i class="far fa-comments"></i>
+                                                    <span>10</span>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </div>
+                                            </div>
+                                    <h6>Comidas simples</h6>
                                     <p>En este artículo van a poner una receta muy simple, sana y muy rica!</p>
                                 </div>
                             </div>
@@ -140,41 +147,45 @@
                         </article>
 
                     </section>
-            </main>
-            <!--Aside (about me)-->
+                </main>
+                <!--Aside (about me)-->
 
-            <aside>
-                <section class="profile">
+                <aside>
+                    <section id="aboutme">
 
-                    <h6 class="lead">SOBRE MI</h6>
-                    <img src="img/img-home/perfil.jpg">
-                    <div class="profile-description">
-                        <h7>Natalia Guida</h7>
-                        <p>Tengo 23 años, hace dos que estudio cocina y soy fanática de la comida. Espero que les guste
-                            mi contenido.</p>
+                        <h6 class="lead">SOBRE MI</h6>
+                        <img src="img/img-home/perfil.jpg">
+                        <div class="profile-description">
+                            <h7>Natalia Guida</h7>
+                            <p>Tengo 23 años, hace dos que estudio cocina y soy fanática de la comida. Espero que les
+                                guste
+                                mi contenido.</p>
 
-                    </div>
-                    <h6 class="lead">NEWSLETTER</h6>
+                        </div>
+                        <h6 class="lead">NEWSLETTER</h6>
 
-                </section>
-            </aside>
+                    </section>
+                </aside>
 
-        </div>
-        <!-- Se cierra la división de la columna principal en main/aside-->
-
-        <!-- ______________________________________Footer___________________________________________-->
-        <footer>
-
-            <div class="footer-container">
-                <ul>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
-                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a></li>
-                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
-                    <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
-                </ul>
             </div>
-        </footer>
+            <!-- Se cierra la división de la columna principal en main/aside-->
+
+            <!-- ______________________________________Footer___________________________________________-->
+            <footer>
+
+                <div class="footer-container">
+                    <ul id="contact">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a></li>
+                        <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
+                                    class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
+                        <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
 </body>
 
 </html>
