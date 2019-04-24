@@ -1,0 +1,30 @@
+body {
+
+    display: flex;
+
+    .route-page {
+        display: flex;
+        justify-items: flex-start;
+    }
+
+    .recipe-img {
+    display: flex;
+    justify-content: center;
+    }
+
+    .recipe-steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    section {
+        display: flex;
+    }
+
+    .recipe-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+}

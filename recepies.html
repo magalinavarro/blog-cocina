@@ -8,8 +8,9 @@
     <title>Recetas</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-        <!-- falta linkear a css y poner los links a fuentes--> 
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 
 <body>
@@ -18,14 +19,16 @@
 
         <div class="header-container">
             <div class="main-menu">
-                <h1>Mi blog de cocina</h1>
-                <nav>
+                <h1 class="page-title">Mi blog de cocina</h1>
+                <nav class="menu-list">
                     <ul>
                         <li><a href="home.html">HOME</a></li>
                         <li><a href="recepies.html">PLATOS</a></li>
                         <i class="fas fa-sort-down"></i>
-                        <li>SOBRE MI</li> <!--acá va un id para que redirija a esa parte de la página, hay que crearlo en home.html-->
-                        <li>CONTACTO</li> <!--acá tmb-->
+                        <li id="about-me">SOBRE MI</li>
+                        <!--Que redirija a esa parte de la página, hay que crearlo en home.html-->
+                        <li id="contact-me">CONTACTO</li>
+                        <!--acá tmb-->
                     </ul>
                 </nav>
             </div>
@@ -42,11 +45,11 @@
 
     <section class="recipe-details">
         <div class="social-media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
         </div>
         <div class="recipe-img">
             <img src="../tp1-ada/img/img-recepies/recetas.JPG" />
@@ -55,12 +58,12 @@
             <h4>By Maria | Mayo 19, 2017</h4>
         </div>
         <div class="info-details">
-                <i class="far fa-heart"></i>
-                <h4>20</h4>
-                <i class="far fa-comments"></i>
-                <h4>10</h4>
-                <i class="fas fa-share-alt"></i>
-            </div>
+            <i class="far fa-heart"></i>
+            <h4>20</h4>
+            <i class="far fa-comments"></i>
+            <h4>10</h4>
+            <i class="fas fa-share-alt"></i>
+        </div>
         <div class="recipe-steps">
             <h2>Pionono salado</h2>
             <p>Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. aquí va la
@@ -84,17 +87,18 @@
             </ul>
         </div>
     </section>
-    
+
     <footer>
-       <!-- Maga, acá puse íconos a las web de facebook, twitter, etc (a las generales, pero para que sean links), en whatsapp contaban las chicas que lo estaban haciendo-->
+        <!-- Maga, acá puse íconos a las web de facebook, twitter, etc (a las generales, pero para que sean links), en whatsapp contaban las chicas que lo estaban haciendo-->
         <div class="footer-container">
-                <ul>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
-                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a>/li>
-                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
-                    <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
-                </ul>
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a>/li>
+                <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
+                            class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
+                <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+            </ul>
         </div>
     </footer>
 </body>

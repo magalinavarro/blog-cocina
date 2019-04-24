@@ -27,34 +27,10 @@ li {
   color: #686666;
 }
 
-.header-container .page-title {
-  display: flex;
-  justify-content: center;
-}
-.header-container .menu-list {
+.header-container nav {
+  display: flexbox;
+  flex: row;
   justify-content: space-between;
-}
-.header-container ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header-container li {
-  list-style: none;
-}
-.header-container .header-image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.route-page {
-  display: flex;
-  justify-content: space-between;
-}
-
-.recipe-img {
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
