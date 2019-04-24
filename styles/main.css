@@ -14,6 +14,7 @@ En los tamaños de fuente puse al tanteo, dsps lo vamos ajustando*/
 /* Títulos de noticias y algunos más*/
 /*Para la mayoría del texto y creo que también para losíconos*/
 /*Para botones y cintillos, tipo Sobre mí y Newsletter*/
+<<<<<<< HEAD
 .footer-container {
   display: flex;
 }
@@ -58,3 +59,315 @@ li {
 }
 
 /*# sourceMappingURL=main.css.map */
+=======
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #686666;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  font-size: 16px;
+}
+
+.footer-container ul a {
+  text-decoration: none;
+  color: #686666;
+}
+
+.footer-container ul a i {
+  margin: 0 10px;
+}
+
+.button1 {
+  background-color: white;
+  height: 25px;
+  width: 160px;
+  text-align: center;
+  color: black;
+  line-height: normal;
+}
+
+.lead {
+  background-color: #f7c9d0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+i {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #686666;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #686666;
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "IBM Plex Mono", monospace;
+  color: #686666;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Columna contenedora*/
+  /* Slider */
+  /* Menú secundario*/
+  /* Main, generalidades */
+  /* Video */
+  /* Noticias de recetas */
+  /* Aside*/
+}
+
+#home .content {
+  width: 90%;
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home .slider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#home .slider ul li {
+  width: 25%;
+  padding: 10px;
+}
+
+#home .slider ul li img {
+  width: 100%;
+  height: 500px;
+}
+
+#home .big-column {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home .secondary-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#home .secondary-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#home .secondary-menu ul li {
+  width: 33%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .secondary-menu ul li img {
+  width: 100%;
+  margin: 0;
+  height: 250px;
+  border-radius: 20%;
+}
+
+#home .secondary-menu ul li .button1 {
+  position: absolute;
+  margin: auto;
+  border-radius: 20px;
+}
+
+#home .columns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+#home main {
+  width: 70%;
+}
+
+#home .video-container {
+  width: 800px;
+}
+
+#home .video {
+  width: 100%;
+  height: 500px;
+}
+
+#home .video-description {
+  font-size: 10px;
+}
+
+#home .news {
+  margin-top: 40px;
+  border-top: 1px solid #686666;
+  padding-top: 30px;
+}
+
+#home .news-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#home .news-content img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+#home .news-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.info-details #home .comments-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#home .news-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20px;
+}
+
+#home .news-text h6 {
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#home aside {
+  width: 400px;
+  height: 700px;
+}
+
+#home #aboutme {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home .profile-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home footer {
+  margin-top: 70px;
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> 20e0b578a94ee677884f8aee979d35aaa5f45ce7
