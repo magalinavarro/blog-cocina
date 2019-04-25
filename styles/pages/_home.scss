@@ -4,6 +4,7 @@
     font-family: $main-font;
     color: $main-color;
     align-items: center;
+    font-size: $paragraph-size;
 
 /* Columna contenedora*/
 
@@ -155,7 +156,7 @@
 }
 
 main {
-    width: 70%;
+    flex-basis: 70%;
 }
 
 
@@ -227,7 +228,7 @@ main {
 
 
 #aboutme {
-    width: 30%;
+    flex-basis: 30%;
     height: 450px;
     display: flex;
     flex-direction: column;
@@ -285,13 +286,30 @@ footer {
 
 
 
+/* ____________________________MEDIA QUERIES__________________________________________________*/
 
 
+@media (max-width: 1180px) {
+    main{
+     flex-basis: 100%;
+     
+    }
+
+    
+
+    aside{
+        flex-basis: 100%;
+        
+    }
+
+    .columns-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 
 
-
-
-
+/* Arreglar aside abajo. Agrandar el hover del slider, que cubra la mitad al menos para que se lea bien. Poner segundo media queries para el slider aprox a los 900px. Después armar el mobile*/
 
 
 

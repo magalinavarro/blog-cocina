@@ -51,7 +51,7 @@ i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .footer-container ul a {
@@ -63,6 +63,7 @@ i {
   margin: 0 10px;
 }
 
+/* buttons del secondary-menu de la home */
 .button1 {
   background-color: white;
   height: 25px;
@@ -79,6 +80,7 @@ i {
   color: black;
   line-height: normal;
   font-weight: bold;
+  /* Acá está el hover de los buttons*/
 }
 
 .button1:hover {
@@ -90,7 +92,7 @@ i {
   margin: 0 10px;
   text-decoration: none;
   color: #686666;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 a {
@@ -111,6 +113,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
   /* Columna contenedora*/
   /* Slider */
   /* Menú secundario*/
@@ -287,7 +290,8 @@ a {
 }
 
 #home main {
-  width: 70%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 
 #home .video-container {
@@ -365,7 +369,8 @@ a {
 }
 
 #home #aboutme {
-  width: 30%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,11 +411,33 @@ a {
   background-color: #f7c9d0;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
   color: black;
 }
 
 #home footer {
   margin-top: 70px;
 }
+
+/* ____________________________MEDIA QUERIES__________________________________________________*/
+@media (max-width: 1180px) {
+  main {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  aside {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .columns-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* Arreglar aside abajo. Agrandar el hover del slider, que cubra la mitad al menos para que se lea bien. Poner segundo media queries para el slider aprox a los 900px. Después armar el mobile*/
 /*# sourceMappingURL=main.css.map */

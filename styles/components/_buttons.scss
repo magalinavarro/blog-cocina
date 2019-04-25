@@ -1,4 +1,5 @@
 
+/* buttons del secondary-menu de la home */
 .button1 {
     background-color: white;
     height: 25px;
@@ -9,7 +10,9 @@
     color: black;
     line-height: normal;
     font-weight: bold;
-      
+
+      /* Acá está el hover de los buttons*/
+
     &:hover { 
         background-color: $secondary-color;
         cursor: pointer;
