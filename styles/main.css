@@ -51,24 +51,62 @@ img {
   margin: 0 10px;
 }
 
-.header-container .page-title {
+header {
+  /*No me está tomando la tipografía y el color*/
+}
+header .header-container {
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+header .main-menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /*No me toma la separación entre los menúes*/
+}
+header .main-menu h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: #e98a4b;
+  margin: 0;
+  text-align: center;
+}
+header .main-menu ul {
+  font-family: "IBM Plex Mono", monospace;
+  color: #686666;
+  justify-content: space-around;
+  display: flex;
+  font-weight: bold;
+}
+header .main-menu ul li {
+  padding: 30px;
+}
+header .sub-menu-container {
+  position: relative;
+  width: 150px;
+}
+header .sub-menu-container:hover .sub-menu {
+  visibility: visible;
+  cursor: pointer;
+}
+header .sub-menu {
+  position: absolute;
+  background-color: lightgray;
+  left: 0;
+  top: 25px;
+  width: 150px;
+  flex-direction: column;
+  visibility: hidden;
+}
+header .header-image-container {
   justify-content: center;
+  width: 100%;
 }
-.header-container .menu-list {
-  justify-content: space-between;
-}
-.header-container ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header-container li {
-  list-style: none;
-}
-.header-container .header-image-container {
-  display: flex;
-  justify-content: center;
+header .header-image-container img {
+  width: 100%;
+  flex-shrink: 1;
 }
 
 .button1 {
@@ -246,59 +284,28 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* PROPIEDADES DEL CONTENEDOR GENERAL */
-.general-container {
-  max-width: 1200px;
-  min-width: 400px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  /* HEADER */
-  /*No me está tomando la tipografía y el color*/
-  /*No me toma la separación entre los menúes*/
+  width: 100%;
   /* CASITA Y TEXTO BAJO LA FOTO DEL BANNER */
   /* ÍCONOS DE REDES SOCIALES Y RECETA GENERAL */
   /* FOOTER */
 }
-.general-container .menu-list {
-  justify-content: space-between;
-  margin-left: 400px;
-  margin-right: 400px;
-}
-.general-container ul {
-  max-width: 1200px;
-  min-width: 400px;
-  font-family: "IBM Plex Mono", monospace;
-  color: #686666;
-  position: relative;
-  justify-content: space-between;
-}
-.general-container .route-page {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .route-page {
   font-family: "IBM Plex Mono", monospace;
   color: #686666;
   display: flex;
   justify-items: flex-start;
   flex-grow: 1;
-  margin-left: 120px;
-  margin-left: -700px;
 }
-.general-container .route-page .home-and-archive {
+#recepies .route-page .home-and-archive {
   font-weight: bold;
 }
-.general-container .route-page #home-icon {
-  margin-right: 10px;
+#recepies .route-page #home-icon {
   padding-top: 20px;
 }
-.general-container .route-page .single-post-blog {
+#recepies .route-page .single-post-blog {
   color: #686666;
 }
-.general-container .recipe-details {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .recipe-details {
   font-family: "IBM Plex Mono", monospace;
   color: #686666;
   display: flex;
@@ -315,49 +322,37 @@ a {
   y pruebo cambiar algo ahí sí lo toma, acá no*/
   /* PASO A PASO DE LA RECETA */
 }
-.general-container .recipe-details .social-media-icons {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .recipe-details .social-media-icons {
   display: flex;
   justify-content: space-around;
   max-width: 200px;
   flex-direction: column;
-  margin-left: 240px;
-  margin-top: -300px;
   flex-grow: 1;
   list-style: none;
   position: absolute;
 }
-.general-container .recipe-details .social-media-icons .margin-icons {
+#recepies .recipe-details .social-media-icons .margin-icons {
   margin: 10px;
 }
-.general-container .recipe-details .recipe-img {
+#recepies .recipe-details .recipe-img {
   display: flex;
   justify-content: center;
-  margin-left: 100px;
   margin-top: 50px;
 }
-.general-container .recipe-details .img-radius {
+#recepies .recipe-details .img-radius {
   border-radius: 40px 40px 40px 40px;
 }
-.general-container .recipe-details .info-details {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .recipe-details .info-details {
   padding-left: 350px;
   color: #686666;
   padding-top: 20px;
   position: relative;
 }
-.general-container .recipe-details .coments-info {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .recipe-details .coments-info {
   color: #686666;
   padding-top: 20px;
-  margin-left: 780px;
 }
-.general-container .recipe-details .recipe-steps {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies .recipe-details .recipe-steps {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -366,40 +361,35 @@ a {
   padding-bottom: 100px;
   /*Descripción breve de la receta*/
   /*Frase citada*/
-  /*No me está tomando el borde*/
   /*Dueña de la frase citada*/
   /*Lista de ingredientes*/
 }
-.general-container .recipe-details .recipe-steps h2 {
+#recepies .recipe-details .recipe-steps h2 {
   font-weight: bold;
 }
-.general-container .recipe-details .recipe-steps .recipe-description {
+#recepies .recipe-details .recipe-steps .recipe-description {
   color: #686666;
 }
-.general-container .recipe-details .recipe-steps .blockquote {
-  border-width: 10px;
-  border-left: 20px;
-  border-color: #e98a4b;
+#recepies .recipe-details .recipe-steps blockquote {
+  border-left: 3px solid #e98a4b;
 }
-.general-container .recipe-details .recipe-steps .quote {
+#recepies .recipe-details .recipe-steps .quote {
   font-weight: bold;
 }
-.general-container .recipe-details .recipe-steps .author-name {
+#recepies .recipe-details .recipe-steps .author-name {
   color: #686666;
   font-weight: normal;
 }
-.general-container .recipe-details .recipe-steps ul {
+#recepies .recipe-details .recipe-steps ul {
   list-style: none;
 }
-.general-container .recipe-details .recipe-steps ul li::before {
+#recepies .recipe-details .recipe-steps ul li::before {
   content: "• ";
   color: #e98a4b;
   width: 1em;
   margin-left: -em;
 }
-.general-container footer {
-  max-width: 1200px;
-  min-width: 400px;
+#recepies footer {
   margin-top: 70px;
   font-family: "IBM Plex Mono", monospace;
   color: #686666;

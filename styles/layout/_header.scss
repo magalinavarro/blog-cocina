@@ -1,27 +1,71 @@
-.header-container {
-
-    .page-title {
+header {
+    
+    /*No me está tomando la tipografía y el color*/
+    .header-container {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
 
     }
-
-    .menu-list {
-        justify-content: space-between;   
-    }
-
-    ul {
+    .main-menu {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+        flex-direction: column;
+        align-content: center;
 
-    li {
-        list-style: none;
-    }
+    /*No me toma la separación entre los menúes*/
 
+        h1 {
+            font-family: $logo-font;
+            font-size: $logo-font-big-size;
+            color: $secondary-color;
+            margin: 0;
+            text-align: center;
+        }
+
+        ul  {
+            font-family: $main-font;
+            color: $main-color;
+            justify-content: space-around;
+            display: flex;
+            font-weight: bold; 
+        
+                li {
+                    padding: 30px;
+                }
+        }
+
+}
+
+.sub-menu-container {
+    position: relative;
+    width: 150px;
+    &:hover .sub-menu {
+        visibility: visible;
+        cursor: pointer;
+    }
+}
+
+.sub-menu {
+    position: absolute;
+    background-color:lightgray;
+    left: 0;
+    top: 25px;
+    width: 150px;
+    flex-direction: column;
+    visibility: hidden;
+
+}
+
+@media (max-width: 400px) {
+}
     .header-image-container {
-        display: flex;
         justify-content: center;
+        width: 100%;
+
+            img {
+                width: 100%;
+                flex-shrink: 1;
+            }
     }
 }

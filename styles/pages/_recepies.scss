@@ -4,60 +4,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    width: 100%;
 
-/* PROPIEDADES DEL CONTENEDOR GENERAL */
-
-.general-container {
-    max-width: 1200px;
-    min-width: 400px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-
-/* HEADER */
-            /*No me está tomando la tipografía y el color*/
-            .page-title {
-                $logo-font: 'Indie Flower', cursive;
-                $logo-font-big-size: 50px;
-                $secondary-color: #e98a4b;
-            }
-
-            /*No me toma la separación entre los menúes*/
-            .menu-list {
-                justify-content: space-between;
-                margin-left:400px;
-                margin-right: 400px;
-            }
-
-            ul {
-                max-width: 1200px;
-                min-width: 400px;
-                font-family: $main-font;
-                color: $main-color;
-                position: relative;
-                justify-content: space-between;
-            }
+    @media (max-width: 400px) {
+    }
 
 /* CASITA Y TEXTO BAJO LA FOTO DEL BANNER */
 
            .route-page {
-                max-width: 1200px;
-                min-width: 400px;
                 font-family: $main-font;
                 color: $main-color;
                 display: flex;
                 justify-items: flex-start;
                 flex-grow: 1;
-                margin-left: 120px;
-                margin-left: -700px;
 
                     .home-and-archive {
                         font-weight: bold;
                     }
         
                     #home-icon {
-                        margin-right: 10px;
                         padding-top: 20px;
                     }
 
@@ -69,8 +34,6 @@
 /* ÍCONOS DE REDES SOCIALES Y RECETA GENERAL */
 
             .recipe-details {
-                max-width: 1200px;
-                min-width: 400px;
                 font-family: $main-font;
                 color: $main-color;
                 display: flex;
@@ -81,14 +44,10 @@
 
                 /*Estilar los íconos, no sé cómo hacerlo*/
                     .social-media-icons {
-                        max-width: 1200px;
-                        min-width: 400px;
                         display: flex;
                         justify-content: space-around;
                         max-width: 200px;
                         flex-direction: column;
-                        margin-left: 240px;
-                        margin-top: -300px;
                         flex-grow: 1;
                         list-style: none;
                         position: absolute;
@@ -101,8 +60,8 @@
                         .recipe-img {
                             display: flex;
                             justify-content: center;
-                            margin-left: 100px;
                             margin-top: 50px;
+    
                         }
 
                                 .img-radius {
@@ -114,9 +73,7 @@
                 /*Datos de la autora*/
 
                 .info-details {
-                    
-                    max-width: 1200px;
-                    min-width: 400px;
+
                     padding-left: 350px;
                     color: #686666;
                     padding-top: 20px;
@@ -130,20 +87,13 @@
                 y pruebo cambiar algo ahí sí lo toma, acá no*/
 
                 .coments-info {
-                    
-                    max-width: 1200px;
-                    min-width: 400px;
                     color: #686666;
                     padding-top: 20px;
-                    margin-left: 780px;
                 }
 
 /* PASO A PASO DE LA RECETA */
 
                 .recipe-steps {
-                    
-                    max-width: 1200px;
-                    min-width: 400px;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
@@ -163,12 +113,9 @@
 
                     /*Frase citada*/
 
-                    /*No me está tomando el borde*/
-
-                    .blockquote {
-                        border-width: 10px;
-                        border-left: 20px;
-                        border-color: $secondary-color;
+                    blockquote {
+                        border-left: 3px solid #e98a4b;
+                        
                     }
 
                     .quote {
@@ -200,11 +147,12 @@
 /* FOOTER */
 
         footer {
-            max-width: 1200px;
-            min-width: 400px;
             margin-top: 70px;
             font-family: $main-font;
             color: $main-color;
+
+            @media (max-width: 400px) {
+            }
         }
 
 }
