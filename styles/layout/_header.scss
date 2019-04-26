@@ -1,27 +1,36 @@
-.header-container {
+/* HEADER */
 
-    .page-title {
+
+header {
+
+    .main-menu {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-content: center;
 
+        h1 {
+            font-family: $logo-font;
+            font-size: $logo-font-big-size;
+            color: $secondary-color;
+        }
+
+        ul { 
+            display: flex;
+            font-family: $main-font;
+            font-size: $medium-size;
+            color: $main-color;
+            font-weight: bold;
+            position: relative;
+            justify-content: space-between;
+
+            li {
+                margin: 30px;
+            }
+
+        }
     }
 
-    .menu-list {
-        justify-content: space-between;   
-    }
+    @media (max-width: 400px) {
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    .header-image-container {
-        display: flex;
-        justify-content: center;
     }
 }

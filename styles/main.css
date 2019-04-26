@@ -50,6 +50,11 @@ i {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,45 +99,41 @@ i {
   margin: 0 10px;
 }
 
-.header-container .page-title {
+/* HEADER */
+header .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-container .menu-list {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+header .main-menu h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: #e98a4b;
+}
+
+header .main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 17px;
+  color: #686666;
+  font-weight: bold;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.header-container li {
-  list-style: none;
-}
-
-.header-container .header-image-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+header .main-menu ul li {
+  margin: 30px;
 }
 
 /* buttons del secondary-menu de la home */
