@@ -8,23 +8,23 @@
     <title>Recetas</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 
-<body class="general-container">
+<body id="recepies" class="general-container">
 
     <header>
 
         <div class="header-container">
             <div class="main-menu">
                 <h1 class="page-title">Mi blog de cocina</h1>
-                <nav class="menu-list">
-                    <ul>
+                <nav>
+                    <ul class="menu-list">
                         <li><a href="home.html">HOME</a></li>
                         <li><a href="recepies.html">PLATOS</a><i class="fas fa-sort-down"></i></li>
-                        <li><a href="home.html#aboutme">SOBRE MI</a></li> 
+                        <li><a href="home.html#aboutme">SOBRE MI</a></li>
                         <li><a href="home.html#contact">CONTACTO</a></li>
                     </ul>
                 </nav>
@@ -37,44 +37,51 @@
 
     <div class="route-page">
         <i id="home-icon" class="fas fa-home"></i>
-        <h4 class="home-and-archive">Home  >  Archive  ></h4><h4 class="single-post-blog">Single Post Blog</h4>
+        <h4 class="home-and-archive">Home > Archive ></h4>
+        <h4 class="single-post-blog">Single Post Blog</h4>
     </div>
 
     <section class="recipe-details">
         <ul class="social-media-icons">
             <li class="margin-icons"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-f"></i></li>
             <li class="margin-icons"><a href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
-            <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"></a><i class="fab fa-google-plus-g"></i></li>
-            <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"></a><i class="fab fa-instagram"></i></li>
+            <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"></a><i
+                    class="fab fa-google-plus-g"></i></li>
+            <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"></a><i class="fab fa-instagram"></i>
+            </li>
             <li class="margin-icons"><a href="https://www.pinterest.com/"></a><i class="fab fa-pinterest-p"></i></li>
         </ul>
         <div class="recipe-img">
-            <img src="../tp1-ada/img/img-recepies/recetas.JPG" class="img-radius"/>
+            <img src="../tp1-ada/img/img-recepies/recetas.JPG" class="img-radius" />
         </div>
-        <div class="info-details">
-            <h4>By Maria | Mayo 19, 2017</h4>
-        </div>
-        <div class="info-details-social">
-            <i class="far fa-heart"></i>
-            <h4>20</h4>
-            <i class="far fa-comments"></i>
-            <h4>10</h4>
-            <i class="fas fa-share-alt"></i>
+
+        <div class="news-info">
+            <div class="info-details">
+                <div>By Maria | Mayo 19, 2017</div>
+            </div>
+            <div class="comments-info">
+                <a href=#><i class="far fa-heart"></i></a>
+                <span>20</span>
+                <a href=#><i class="far fa-comments"></i></a>
+                <span>10</span>
+                <a href=#><i class="fas fa-share-alt"></i></a>
+            </div>
         </div>
         <div class="recipe-steps">
             <h2>Pionono salado</h2>
-            <p class="recipe-description">Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. aquí va la
+            <p class="recipe-description">Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces
+                o salados. aquí va la
                 receta bien caserita, como lo hacía mi abuela.</p>
             <div class="famous-quote">
                 <p>
-                    <blockquote>"La cocina es algo que viene de generación en generación, desde nuestros ancestros hasta
-                        ahora en nuestra actualidad. Muchas recetas tradicionales."
+                    <blockquote> <h4 class= "quote">"La cocina es algo que viene de generación en generación, desde nuestros ancestros hasta
+                        ahora en nuestra actualidad. Muchas recetas tradicionales."</h4>
                         <br />
                         <h4 class="author-name">Elena Remoto</h4>
                     </blockquote>
                 </p>
             </div>
-            <ul>
+            <ul class="ingredients-list">
                 <li>2 cebollas moradas.</li>
                 <li>6 champignones.</li>
                 <li>4 cdas. de pan rallado.</li>
@@ -89,11 +96,12 @@
         <div class="footer-container">
             <ul>
                 <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
-                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a>/li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a></li>
                 <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
                             class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
                 <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
                 <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>YOUTUBE</a></li>
             </ul>
         </div>
     </footer>
