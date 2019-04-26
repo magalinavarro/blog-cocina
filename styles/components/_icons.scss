@@ -3,9 +3,28 @@ i {
     text-decoration: none;
     color: $main-color;
     font-size: $paragraph-size;
+
+
 }
 
 a {
     text-decoration: none;
     color: $main-color;
+}
+
+#mobile-icon {
+    color: $secondary-color;
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 40%;
+    font-size: 40px;
+    
+    
+      
+        @media (max-width: 400px) {
+        display: flex;
+
+        }
+      
 }

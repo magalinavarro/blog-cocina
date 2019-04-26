@@ -1,11 +1,7 @@
 @charset "UTF-8";
 /* FONTS */
-/* Hay que linkear en html esto: 
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-
-En los tamaños de fuente puse al tanteo, dsps lo vamos ajustando*/
 /* Es la fuente que está en la mayoría de los párrafos y títulos*/
+/* Para las volantas*/
 /* Este es el tamaño para los títulos de las noticias, por ejemplo*/
 /* Este es el tamaño para el nav y los títulos de las secciones*/
 /* Es la fuente del banner*/
@@ -14,6 +10,7 @@ En los tamaños de fuente puse al tanteo, dsps lo vamos ajustando*/
 /* Títulos de noticias y algunos más*/
 /*Para la mayoría del texto y creo que también para losíconos*/
 /*Para botones y cintillos, tipo Sobre mí y Newsletter*/
+/*Para las líneas divisorias, es el mismo color que $main-color, pero con un poco de transparencia*/
 body {
   margin: 0;
 }
@@ -21,15 +18,26 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 img {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 h6 {
@@ -42,6 +50,19 @@ i {
   padding: 0;
 }
 
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  position: relative;
+}
+
 .footer-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +73,16 @@ i {
           justify-content: space-between;
   list-style: none;
   font-size: 17px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #68666679;
+  margin-bottom: 60px;
+  margin-top: 70px;
+}
+
+@media (max-width: 780px) {
+  .footer-container ul span {
+    display: none;
+  }
 }
 
 .footer-container ul a {
@@ -80,6 +111,9 @@ i {
   color: black;
   line-height: normal;
   font-weight: bold;
+  position: absolute;
+  margin: auto;
+  border-radius: 20px;
   /* Acá está el hover de los buttons*/
 }
 
@@ -88,16 +122,58 @@ i {
   cursor: pointer;
 }
 
+.button2 {
+  background-color: #f7c9d0;
+  height: 25px;
+  width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  line-height: normal;
+  font-weight: bold;
+  border-radius: 20px;
+  /* Acá está el hover de los buttons*/
+}
+
+.button2:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
 i {
   margin: 0 10px;
   text-decoration: none;
   color: #686666;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: #686666;
+}
+
+#mobile-icon {
+  color: #e98a4b;
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  left: 40%;
+  font-size: 40px;
+}
+
+@media (max-width: 400px) {
+  #mobile-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 #home {
@@ -113,7 +189,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  font-size: 16px;
   /* Columna contenedora*/
   /* Slider */
   /* Menú secundario*/
@@ -121,11 +197,10 @@ a {
   /* Video */
   /* Noticias de recetas */
   /* Aside (aboutme)*/
-  /* Footer */
 }
 
 #home .content {
-  width: 90%;
+  width: 100%;
   max-width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,22 +232,53 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 840px) {
+  #home .slider ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 #home .slider ul li {
-  width: 25%;
-  padding: 10px;
+  width: 24%;
+}
+
+@media (max-width: 840px) {
+  #home .slider ul li {
+    width: 48%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  #home .slider ul li {
+    width: 100%;
+  }
 }
 
 #home .slider ul li img {
   width: 100%;
 }
 
+#home .slider ul li:nth-of-type(1n + 2) {
+  /* En este media queries la 2da, 3ra y 4ta imagen del carrousel desaparecen*/
+}
+
+@media (max-width: 400px) {
+  #home .slider ul li:nth-of-type(1n + 2) {
+    display: none;
+  }
+}
+
 #home .slider-text {
   display: none;
   position: absolute;
-  background-color: #e98a4b;
-  opacity: .7;
+  background-color: rgba(243, 104, 12, 0.575);
   height: 110px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -186,17 +292,36 @@ a {
 #home .slider-text p {
   margin: 30px 0 10px 10px;
   padding: 0;
-  font-size: 11px;
+  font-size: 14px;
   color: white;
   opacity: 1.0;
+}
+
+@media (max-width: 400px) {
+  #home .slider-text p {
+    margin-right: 0;
+  }
 }
 
 #home .slider-text h5 {
   margin: 0 0 10px 10px;
   padding: 0;
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   opacity: 1.0;
+}
+
+@media (max-width: 400px) {
+  #home .slider-text h5 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1180px) {
+  #home .slider-text {
+    /* En el media de 1180 px el hover de la primera imagen del carrousel crece en altura*/
+    height: 70%;
+  }
 }
 
 #home .slider-image {
@@ -223,7 +348,7 @@ a {
 }
 
 #home .big-column {
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +356,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 650px) {
+  #home .big-column {
+    width: 100%;
+  }
 }
 
 #home .secondary-menu {
@@ -242,6 +373,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 30px;
 }
 
 #home .secondary-menu ul {
@@ -253,6 +385,16 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+}
+
+@media (max-width: 550px) {
+  #home .secondary-menu ul {
+    /* En este media queries el secondary-menu pasa a estar en columna*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #home .secondary-menu ul li {
@@ -270,16 +412,16 @@ a {
           align-items: center;
 }
 
+@media (max-width: 550px) {
+  #home .secondary-menu ul li {
+    width: 100%;
+  }
+}
+
 #home .secondary-menu ul li img {
   width: 100%;
   margin: 0;
   border-radius: 20%;
-}
-
-#home .secondary-menu ul li .button1 {
-  position: absolute;
-  margin: auto;
-  border-radius: 20px;
 }
 
 #home .columns-container {
@@ -289,13 +431,39 @@ a {
   margin-top: 25px;
 }
 
+@media (max-width: 1180px) {
+  #home .columns-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #home main {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
 }
 
+@media (max-width: 1180px) {
+  #home main {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 #home .video-container {
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  #home .video-container {
+    /* En este media queries el video desaparece*/
+    display: none;
+  }
 }
 
 #home .video {
@@ -309,7 +477,7 @@ a {
 
 #home .news {
   margin-top: 40px;
-  border-top: 1px solid #686666;
+  border-top: 1px solid #68666679;
   padding-top: 30px;
 }
 
@@ -319,10 +487,51 @@ a {
   display: flex;
 }
 
+@media (max-width: 630px) {
+  #home .news-content {
+    /* En este media queries el texto pasa abajo de la imagen*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #home .news-content img {
   width: 300px;
-  height: 200px;
   border-radius: 20%;
+}
+
+@media (max-width: 630px) {
+  #home .news-content img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  #home .news-content img {
+    display: none;
+  }
+}
+
+#home .button2 {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  #home .button2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 400px) {
+  #home .news:nth-of-type(2) {
+    /* En este media queries la segunda noticia desaparece*/
+    display: none;
+  }
 }
 
 #home .news-info {
@@ -332,18 +541,30 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
-.info-details #home .comments-info {
+#home .info-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  font-size: 14px;
+}
+
+#home .comments-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+}
+
+#home .comments-info a {
+  width: 28px;
 }
 
 #home .news-text {
@@ -360,12 +581,27 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 400px) {
+  #home .news-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+}
+
 #home .news-text h6 {
   color: black;
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 400px) {
+  #home .news-text h6 {
+    margin-left: 0;
+  }
 }
 
 #home #aboutme {
@@ -388,9 +624,56 @@ a {
   padding-left: 20px;
 }
 
+@media (max-width: 1180px) {
+  #home #aboutme {
+    /* En este media queries el aside baja al final de la columna*/
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    height: 250px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 630px) {
+  #home #aboutme {
+    width: 100%;
+    margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+  }
+}
+
 #home #aboutme img {
-  border-radius: 50%;
-  width: 70%;
+  border-radius: 200%;
+  height: 250px;
+  width: 250px;
+}
+
+@media (max-width: 1180px) {
+  #home #aboutme img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+  }
 }
 
 #home .profile-description {
@@ -415,29 +698,34 @@ a {
   color: black;
 }
 
-#home footer {
-  margin-top: 70px;
-}
-
-/* ____________________________MEDIA QUERIES__________________________________________________*/
 @media (max-width: 1180px) {
-  main {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  aside {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .columns-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #home .lead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
-/* Arreglar aside abajo. Agrandar el hover del slider, que cubra la mitad al menos para que se lea bien. Poner segundo media queries para el slider aprox a los 900px. Después armar el mobile*/
+@media (max-width: 400px) {
+  #home .lead {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1180px) {
+  #home .lead:nth-of-type(2) {
+    position: absolute;
+    top: 250px;
+    left: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  #home .lead:nth-of-type(2) {
+    top: 400px;
+  }
+}
+
+/* Cierra home*/
 /*# sourceMappingURL=main.css.map */

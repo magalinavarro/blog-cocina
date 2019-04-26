@@ -10,6 +10,9 @@
     color: black;
     line-height: normal;
     font-weight: bold;
+    position: absolute;
+    margin: auto;
+    border-radius: 20px;
 
       /* Acá está el hover de los buttons*/
 
@@ -17,5 +20,25 @@
         background-color: $secondary-color;
         cursor: pointer;
         }
+}
+
+.button2 {
+  background-color: $items-color;
+  height: 25px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  line-height: normal;
+  font-weight: bold;
+  border-radius: 20px;
+
+    /* Acá está el hover de los buttons*/
+
+  &:hover { 
+      background-color: white;
+      cursor: pointer;
+      }
 }
 

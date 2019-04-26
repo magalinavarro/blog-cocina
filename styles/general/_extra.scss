@@ -1,0 +1,78 @@
+ Media queries 
+ @media (max-width: 1180px) {
+
+
+   
+   
+    main {
+     flex-grow: 1;
+     
+    }
+
+    .columns-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    /* Ajustes en el Aside*/
+
+    #aboutme {
+        flex-grow: 1;
+        flex-direction: row;
+        position: relative;
+        height: 250px;
+        justify-content: flex-start;
+        margin-top: 50px;
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+           
+        }
+
+        .lead {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+          
+        }
+
+        .lead:nth-of-type(2) {
+            position: absolute;
+            top: 250px;
+            left: 0;
+            
+        }
+
+        
+        
+    }
+
+
+
+/* El hover de la primera imagen del carrousel crece en altura*/
+
+    .slider-text {
+        height: 70%;
+    }
+
+ 
+   
+} /* Cierra el media queries de 1180px*/
+
+
+
+
+@media (max-width: 840px) {
+
+    /* En este media queries las imágenes del carrousel pasan a ocupar dos filas (con dos imágenes cada una)*/
+    
+    
+        
+    
+    
+    } /* Cierra el media queries de 840px*/
+
+
