@@ -1,7 +1,5 @@
-header {
-    
-    /*No me está tomando la tipografía y el color*/
-    .header-container {
+
+.header-container {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -13,7 +11,6 @@ header {
         flex-direction: column;
         align-content: center;
 
-    /*No me toma la separación entre los menúes*/
 
         h1 {
             font-family: $logo-font;
@@ -31,16 +28,34 @@ header {
             font-weight: bold; 
         
                 li {
-                    padding: 30px;
+                    line-height: 40px;
+                    padding: 0 10px;
+                    margin: 0 10px; 
+
+                    
                 }
+
+        
+            a:hover {
+                color: $secondary-color;
+            }
+
+            a:hover i {
+                color: $secondary-color;
+            }
+        
         }
 
-}
+
 
 .sub-menu-container {
     position: relative;
-    width: 150px;
-    &:hover .sub-menu {
+
+        i {
+            vertical-align: 3px;
+        }
+    
+        &:hover .sub-menu {
         visibility: visible;
         cursor: pointer;
     }
@@ -48,17 +63,17 @@ header {
 
 .sub-menu {
     position: absolute;
-    background-color:lightgray;
-    left: 0;
-    top: 25px;
-    width: 150px;
+    background-color:white;
+    left: -10px;
+    top: 29px;
+    width: 110px;
     flex-direction: column;
+    z-index: 1;
     visibility: hidden;
 
 }
 
-@media (max-width: 400px) {
-}
+
     .header-image-container {
         justify-content: center;
         width: 100%;
@@ -69,3 +84,4 @@ header {
             }
     }
 }
+

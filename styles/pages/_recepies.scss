@@ -4,16 +4,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: $main-font;
+    color: $main-color;
     width: 100%;
 
     @media (max-width: 400px) {
     }
 
+.general-container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}    
 /* CASITA Y TEXTO BAJO LA FOTO DEL BANNER */
 
            .route-page {
-                font-family: $main-font;
-                color: $main-color;
+                
                 display: flex;
                 justify-items: flex-start;
                 flex-grow: 1;
@@ -30,27 +38,29 @@
                         color: #686666;
                     }
             }
-
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* ÍCONOS DE REDES SOCIALES Y RECETA GENERAL */
 
             .recipe-details {
                 font-family: $main-font;
                 color: $main-color;
+                flex-direction: column;
                 display: flex;
                 flex-grow: 1;
-                margin-bottom: -60px;
-                flex-direction: column;
                 justify-content: center;
 
                 /*Estilar los íconos, no sé cómo hacerlo*/
                     .social-media-icons {
                         display: flex;
                         justify-content: space-around;
-                        max-width: 200px;
                         flex-direction: column;
-                        flex-grow: 1;
                         list-style: none;
-                        position: absolute;
+                        
 
                             .margin-icons {
                                 margin:10px;
@@ -61,6 +71,10 @@
                             display: flex;
                             justify-content: center;
                             margin-top: 50px;
+                            
+                                img {
+                                    width: 600px;
+                                }
     
                         }
 
@@ -72,34 +86,53 @@
 
                 /*Datos de la autora*/
 
+                .news-info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 50px; 
+                    margin-top: 30px;
+                    width: 600px;          
+                      
+                    
+            
+                }
+            
                 .info-details {
-
-                    padding-left: 350px;
-                    color: #686666;
-                    padding-top: 20px;
-                    position: relative;
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: $small-size;
+            
+                   
+                }
+            
+            
+                .comments-info {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: $small-size; 
+                        a {
+                            width: 28px;
+                        }
+                    
                 }
 
-                /*Interacciones de redes sociales*/
-
-                /*No me está tomando el estilado, no se coloca donde debe estar.
-                Ver si otro atributo lo está pisando, si inspecciono en Chrome
-                y pruebo cambiar algo ahí sí lo toma, acá no*/
-
-                .coments-info {
-                    color: #686666;
-                    padding-top: 20px;
-                }
+                
 
 /* PASO A PASO DE LA RECETA */
+
+            .receipe-text {
+                display: flex;
+                flex-direction: column;
+                width: 600px;
+                align-items: flex-start;
+            }
 
                 .recipe-steps {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-                    padding-left: 350px;
-                    padding-right: 350px;
-                    padding-bottom: 100px;
+                    margin-left: 50px;
+                    
 
                     h2 {
                         font-weight: bold;
@@ -125,7 +158,6 @@
                     /*Dueña de la frase citada*/
 
                     .author-name {
-                        color: #686666;
                         font-weight: normal;
                     }                    
 
@@ -143,16 +175,4 @@
                         }
                 }
         }        
-
-/* FOOTER */
-
-        footer {
-            margin-top: 70px;
-            font-family: $main-font;
-            color: $main-color;
-
-            @media (max-width: 400px) {
-            }
-        }
-
 }

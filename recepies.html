@@ -12,7 +12,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 
 <!-- Cuerpo general de la página -->
@@ -33,9 +33,9 @@
                 <nav>
                     <ul class="menu-list">
                         <li><a href="home.html">HOME</a></li>
-                        <li class="sub-menu-container"><a href="#">PLATOS</a><i class="fas fa-sort-down"></i>
+                        <li class="sub-menu-container"><a href="#">PLATOS<i class="fas fa-sort-down"></i></a>
                             <ul class="sub-menu">
-                                <li><a href=recepies.html>Ensalada</a></li>
+                                <li><a href="recepies.html">Ensaladas</a></li>
                                 <li>Carne</li>
                                 <li>Helado</li>
                             </ul>
@@ -69,27 +69,29 @@
 
         <div class="content-container">
             <section class="recipe-details">
-                <ul class="social-media-icons">
-                    <li class="margin-icons"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-f"></i>
-                    </li>
-                    <li class="margin-icons"><a href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
-                    <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"></a><i
-                            class="fab fa-google-plus-g"></i></li>
-                    <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"></a><i
-                            class="fab fa-instagram"></i>
-                    </li>
-                    <li class="margin-icons"><a href="https://www.pinterest.com/"></a><i class="fab fa-pinterest-p"></i>
-                    </li>
-                </ul>
-
+                
                 <!--------- Foto de la receta --------->
 
                 <div class="recipe-img">
+                    <ul class="social-media-icons">
+                                <li class="margin-icons"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li class="margin-icons"><a href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
+                                <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"></a><i
+                                        class="fab fa-google-plus-g"></i></li>
+                                <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"></a><i
+                                        class="fab fa-instagram"></i>
+                                </li>
+                                <li class="margin-icons"><a href="https://www.pinterest.com/"></a><i class="fab fa-pinterest-p"></i>
+                                </li>
+                    </ul>
                     <img src="../tp1-ada/img/img-recepies/recetas.JPG" class="img-radius" />
                 </div>
 
                 <!--------- Autora y fecha --------->
 
+                <div class="receipe-text">
+               
                 <div class="news-info">
                     <div class="info-details">
                         <div>By Maria | Mayo 19, 2017</div>
@@ -138,6 +140,8 @@
                         <li>1 Paquete de queso dambo en fetas.</li>
                     </ul>
                 </div>
+
+            </div>
             </section>
         </div>
 
@@ -146,17 +150,18 @@
         <!--------- Links a redes sociales --------->
 
         <footer>
-            <div class="footer-container">
-                <ul id="contact">
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
-                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a></li>
-                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
-                                class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
-                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
-                    <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
-                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>YOUTUBE</a></li>
-                </ul>
-            </div>
+                <div class="footer-container">
+                        <ul id="contact">
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>FACEBOOK</span></a></li>
+                            <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i><span>TWITTER</span></a></li>
+                            <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-g"></i><span>GOOGLE+</span></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i><span>LINKEDIN</span></a></li>
+                            <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i><span>INSTAGRAM</span></a>
+                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i><span>YOUTUBE</span></a></li>
+                            </li>
+                        </ul>
+                        <a href="recepies.html"><i class="fas fa-arrow-circle-up" id="mobile-icon"></i></a>
+                    </div>
         </footer>
     </div>
 </body>
