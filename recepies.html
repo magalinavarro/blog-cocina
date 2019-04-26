@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Links útiles y título de página-->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,94 +10,155 @@
     <title>Recetas</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-        <!-- falta linkear a css y poner los links a fuentes--> 
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>
 
-<body>
+<!-- Cuerpo general de la página -->
 
+<body id="recepies">
+
+    <!---------------------------------- HEADER ---------------------------------->
     <header>
+
+        <!------------------------ Título ------------------------>
 
         <div class="header-container">
             <div class="main-menu">
-                <h1>Mi blog de cocina</h1>
+                <h1 class="page-title">Mi blog de cocina</h1>
+
+                <!------------------------ Menú desplegable ------------------------>
+
                 <nav>
-                    <ul>
+                    <ul class="menu-list">
                         <li><a href="home.html">HOME</a></li>
-                        <li><a href="recepies.html">PLATOS</a><i class="fas fa-sort-down"></i></li>
-                        <li><a href="home.html#aboutme">SOBRE MI</a></li> 
-                        <li><a href="home.html#contact">CONTACTO</a></li>
+                        <li class="sub-menu-container"><a href="#">PLATOS</a><i class="fas fa-sort-down"></i>
+                            <ul class="sub-menu">
+                                <li><a href=recepies.html>Ensalada</a></li>
+                                <li>Carne</li>
+                                <li>Helado</li>
+                            </ul>
+                        </li>
+                        <li><a href="home.html#aboutme">SOBRE MI</a></li>
+                        <li><a href="#contact">CONTACTO</a></li> <!-- (Redireccionamos a Footer, a la parte de redes -->
                     </ul>
                 </nav>
             </div>
+
+            <!------------------------ Banner ------------------------>
+
             <div class="header-image-container">
-                <img src="img/banner.jpg" />
+                <img src="img/banner.jpg" class="img-banner" />
             </div>
         </div>
     </header>
 
-    <div class="route-page">
-        <i class="fas fa-home"></i>
-        <h4>Home > Archive > Single Post Blog</h4>
-    </div>
+    <!------------------------ Contenedor general de la receta ------------------------>
 
-    <section class="recipe-details">
-        <div class="social-media-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google-plus-g"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest-p"></i>
+    <!--------- Ruta enlace de la página --------->
+
+    <div class="general-container">
+        <div class="route-page">
+            <i id="home-icon" class="fas fa-home"></i>
+            <h4 class="home-and-archive">Home > Archive ></h4>
+            <h4 class="single-post-blog">Single Post Blog</h4>
         </div>
-        <div class="recipe-img">
-            <img src="../tp1-ada/img/img-recepies/recetas.JPG" />
+
+        <!--------- Íconos de redes sociales --------->
+
+        <div class="content-container">
+            <section class="recipe-details">
+                <ul class="social-media-icons">
+                    <li class="margin-icons"><a href="https://www.facebook.com/"></a><i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li class="margin-icons"><a href="https://twitter.com/"></a><i class="fab fa-twitter"></i></li>
+                    <li class="margin-icons"><a href="https://aboutme.google.com/u/0/?referer=gplus"></a><i
+                            class="fab fa-google-plus-g"></i></li>
+                    <li class="margin-icons"><a href="https://www.instagram.com/?hl=es-la"></a><i
+                            class="fab fa-instagram"></i>
+                    </li>
+                    <li class="margin-icons"><a href="https://www.pinterest.com/"></a><i class="fab fa-pinterest-p"></i>
+                    </li>
+                </ul>
+
+                <!--------- Foto de la receta --------->
+
+                <div class="recipe-img">
+                    <img src="../tp1-ada/img/img-recepies/recetas.JPG" class="img-radius" />
+                </div>
+
+                <!--------- Autora y fecha --------->
+
+                <div class="news-info">
+                    <div class="info-details">
+                        <div>By Maria | Mayo 19, 2017</div>
+                    </div>
+
+                    <!--------- Likes, comentarios y share --------->
+
+                    <div class="comments-info">
+                        <a href=#><i class="far fa-heart"></i></a>
+                        <span>20</span>
+                        <a href=#><i class="far fa-comments"></i></a>
+                        <span>10</span>
+                        <a href=#><i class="fas fa-share-alt"></i></a>
+                    </div>
+                </div>
+
+                <!--------- Título, breve resumen y frase célebre --------->
+
+                <div class="recipe-steps">
+                    <h2>Pionono salado</h2>
+                    <p class="recipe-description">Muy sencillo, económico y rápido, sirve para rellenar con ingredientes
+                        dulces
+                        o salados. aquí va la
+                        receta bien caserita, como lo hacía mi abuela.</p>
+                    <div class="famous-quote">
+                        <p>
+                            <blockquote>
+                                <h4 class="quote">"La cocina es algo que viene de generación en generación, desde
+                                    nuestros
+                                    ancestros hasta
+                                    ahora en nuestra actualidad. Muchas recetas tradicionales."</h4>
+                                <br />
+                                <h4 class="author-name">Elena Remoto</h4>
+                            </blockquote>
+                        </p>
+                    </div>
+
+                    <!--------- Ingredientes --------->
+
+                    <ul class="ingredients-list">
+                        <li>2 cebollas moradas.</li>
+                        <li>6 champignones.</li>
+                        <li>4 cdas. de pan rallado.</li>
+                        <li>1 atado de perejil.</li>
+                        <li>2 chiles jalapeños.</li>
+                        <li>1 Paquete de queso dambo en fetas.</li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <div class="info-details">
-            <h4>By Maria | Mayo 19, 2017</h4>
-        </div>
-        <div class="info-details">
-                <i class="far fa-heart"></i>
-                <h4>20</h4>
-                <i class="far fa-comments"></i>
-                <h4>10</h4>
-                <i class="fas fa-share-alt"></i>
-            </div>
-        <div class="recipe-steps">
-            <h2>Pionono salado</h2>
-            <p>Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. aquí va la
-                receta bien caserita, como lo hacía mi abuela.</p>
-            <div class="quote">
-                <p>
-                    <blockquote>"La cocina es algo que viene de generación en generación, desde nuestros ancestros hasta
-                        ahora en nuestra actualidad. Muchas recetas tradicionales."
-                        <br />
-                        Elena Remoto
-                    </blockquote>
-                </p>
-            </div>
-            <ul>
-                <li>2 cebollas moradas.</li>
-                <li>6 champignones.</li>
-                <li>4 cdas. de pan rallado.</li>
-                <li>1 atado de perejil.</li>
-                <li>2 chiles jalapeños.</li>
-                <li>1 Paquete de queso dambo en fetas.</li>
-            </ul>
-        </div>
-    </section>
-    
-    <footer>
-       <!-- Maga, acá puse íconos a las web de facebook, twitter, etc (a las generales, pero para que sean links), en whatsapp contaban las chicas que lo estaban haciendo-->
-        <div class="footer-container">
-                <ul>
+
+        <!---------------------------------- FOOTER ---------------------------------->
+
+        <!--------- Links a redes sociales --------->
+
+        <footer>
+            <div class="footer-container">
+                <ul id="contact">
                     <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>FACEBOOK</a></li>
                     <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>TWITTER</a></li>
-                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
+                    <li><a href="https://aboutme.google.com/u/0/?referer=gplus"><i
+                                class="fab fa-google-plus-g"></i>GOOGLE+</a></li>
                     <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LINKEDIN</a></li>
                     <li><a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i>INSTAGRAM</a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>YOUTUBE</a></li>
                 </ul>
-        </div>
-    </footer>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
