@@ -1,4 +1,23 @@
-/* ID PARA ESTILOS GENERALES DE RECEPIES*/
+/*
+
+ÍNDICE:
+
+1- ID para estilos generales.
+    1.1- Ícono y texto bajo la foto del banner.
+    1.2- Receta general.
+        1.2.1 - Íconos de redes sociales.
+        1.2.2 - Foto de la receta.
+        1.2.3 - Autora y fecha.
+        1.2.4 - Likes, comentarios y share.
+        1.2.5 - Proceso de al receta.
+        1.2.6 - Breve descripción.
+        1.2.7 - Frase citada.
+        1.2.8 - Lista de ingredientes.
+        
+
+*/
+
+/* 1- ID para estilos generales */
 
 #recepies {
     display: flex;
@@ -11,17 +30,16 @@
     @media (max-width: 400px) {
     }
 
-.general-container {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    align-items: flex-start;
-    
-}    
-/* CASITA Y TEXTO BAJO LA FOTO DEL BANNER */
+    .general-container {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        align-items: flex-start;  
+}
 
-           .route-page {
-                
+    /* 1.1 - Ícono y texto bajo la foto del banner */
+
+           .route-page {  
                 display: flex;
                 justify-items: flex-start;
                 flex-grow: 1;
@@ -38,13 +56,15 @@
                         color: #686666;
                     }
             }
-.content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* ÍCONOS DE REDES SOCIALES Y RECETA GENERAL */
+
+    .content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 1.2 - Receta general */
 
             .recipe-details {
                 font-family: $main-font;
@@ -54,18 +74,21 @@
                 flex-grow: 1;
                 justify-content: center;
 
+        /* 1.2.1 - Íconos de redes sociales */
+
                 /*Estilar los íconos, no sé cómo hacerlo*/
                     .social-media-icons {
                         display: flex;
                         justify-content: space-around;
                         flex-direction: column;
-                        list-style: none;
-                        
+                        list-style: none;                   
 
                             .margin-icons {
                                 margin:10px;
                             }
                     }
+
+        /* 1.2.2 - Foto de la receta */
 
                         .recipe-img {
                             display: flex;
@@ -74,38 +97,31 @@
                             
                                 img {
                                     width: 600px;
-                                }
-    
+                                }  
                         }
 
                                 .img-radius {
                                     border-radius: 40px 40px 40px 40px;
                                 }
 
-/* AUTORA DE LA RECETA, FECHA E INTERACCIONES DE REDES SOCIALES */
-
-                /*Datos de la autora*/
+        /* 1.2.3 - Autora y fecha */
 
                 .news-info {
                     display: flex;
                     justify-content: space-between;
                     margin-left: 50px; 
                     margin-top: 30px;
-                    width: 600px;          
-                      
-                    
-            
+                    width: 600px;         
                 }
             
                 .info-details {
                     display: flex;
                     align-items: flex-start;
                     font-size: $small-size;
+                }         
             
-                   
-                }
-            
-            
+        /* 1.2.4 - Likes, comentarios y share */
+
                 .comments-info {
                     display: flex;
                     align-items: flex-start;
@@ -113,12 +129,9 @@
                         a {
                             width: 28px;
                         }
-                    
-                }
+            }         
 
-                
-
-/* PASO A PASO DE LA RECETA */
+        /* 1.2.5 - Proceso de la receta */
 
             .receipe-text {
                 display: flex;
@@ -127,41 +140,38 @@
                 align-items: flex-start;
             }
 
-                .recipe-steps {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin-left: 50px;
+            .recipe-steps {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 50px;
                     
 
                     h2 {
                         font-weight: bold;
                     }
                     
-                    /*Descripción breve de la receta*/
+        /* 1.2.6 - Breve descripción */
 
                     .recipe-description {
                         color: #686666;
                     }
 
-                    /*Frase citada*/
+        /* 1.2.7 - Frase citada */
 
                     blockquote {
-                        border-left: 3px solid #e98a4b;
-                        
+                        border-left: 3px solid #e98a4b;                     
                     }
 
                     .quote {
                         font-weight: bold;
                     }
 
-                    /*Dueña de la frase citada*/
-
                     .author-name {
                         font-weight: normal;
                     }                    
 
-                    /*Lista de ingredientes*/
+        /* 1.2.8 - Lista de ingredientes */
 
                         ul {
                             list-style: none;
