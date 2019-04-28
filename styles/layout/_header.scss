@@ -4,13 +4,12 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
+}
 
-    }
     .main-menu {
         display: flex;
         flex-direction: column;
         align-items: center;
-
 
         h1 {
             font-family: $logo-font;
@@ -20,8 +19,7 @@
             text-align: center;
         }
 
-        ul  {
-            
+        ul  {           
             font-family: $main-font;
             color: $main-color;
             justify-content: space-around;
@@ -31,12 +29,9 @@
                 li {
                     line-height: 40px;
                     padding: 0 10px;
-                    margin: 0 10px; 
-
-                    
+                    margin: 0 10px;   
                 }
-
-        
+    
             a:hover {
                 color: $secondary-color;
             }
@@ -44,17 +39,15 @@
             a:hover i {
                 color: $secondary-color;
             }
-
-        
         }
 
-nav {
-
-    width: 100%;
-    @media (max-width: 650px) {
-        display: none; 
+        nav {
+            width: 100%;
+    
+                @media (max-width: 650px) {
+                display: none; 
+            }
         }
-}
 
 .sub-menu-container {
     position: relative;
@@ -66,7 +59,7 @@ nav {
         &:hover .sub-menu {
         visibility: visible;
         cursor: pointer;
-    }
+        }
 }
 
 .sub-menu {
@@ -78,9 +71,7 @@ nav {
     flex-direction: column;
     z-index: 1;
     visibility: hidden;
-
 }
-
 
     .header-image-container {
         justify-content: center;
@@ -108,18 +99,12 @@ nav {
     margin-bottom: 20px;
 
         @media (max-width: 650px) {
-            display: flex;
-    
-            }
-    
-    
+            display: flex;   
+        }
 
         h4 {
             display: flex;
-            align-items: flex-end;
-            
-
-                
+            align-items: flex-end;              
         }
 
         ul {
@@ -137,7 +122,6 @@ nav {
                 color: white;
                 font-weight: 400;
             }
-
         }
 
         &:hover ul {

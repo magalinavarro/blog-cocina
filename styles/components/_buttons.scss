@@ -1,5 +1,5 @@
 
-/* buttons del secondary-menu de la home */
+/* Buttons del secondary-menu de Home */
 .button1 {
     background-color: white;
     height: 25px;
@@ -14,7 +14,7 @@
     margin: auto;
     border-radius: 20px;
 
-      /* Acá está el hover de los buttons*/
+      /* Hover de los buttons*/
 
     &:hover { 
         background-color: $secondary-color;
@@ -34,7 +34,7 @@
   border-radius: 20px;
   margin-top: 20px;
 
-    /* Acá está el hover de los buttons*/
+    /* Hover de los buttons*/
 
   &:hover { 
       background-color: white;

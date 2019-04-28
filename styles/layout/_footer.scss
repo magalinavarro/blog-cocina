@@ -11,6 +11,7 @@ footer {
     font-family: $main-font;
     width: 100%;
 }
+
 .footer-container ul {
     display: flex;
     color: $main-color;
@@ -25,7 +26,6 @@ footer {
     @media (max-width: 900px) {
         span {
             display: none;
-
         }
     }
 
@@ -36,10 +36,6 @@ footer {
 
         i {
              margin: 0 10px;
-            }
-           
+            }           
     }
-
-    
-
 }
