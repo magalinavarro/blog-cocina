@@ -691,8 +691,7 @@ a {
         1.2.5 - Proceso de la receta.
         1.2.6 - Breve descripción.
         1.2.7 - Frase citada.
-        1.2.8 - Lista de ingredientes.
-
+        1.2.8 - Lista de ingredientes.      
 
 */
 /* 1- ID para estilos generales */
@@ -706,6 +705,12 @@ a {
   /*CONTENEDOR GENERAL*/
   /* 1.1 - Ícono y texto bajo la foto del banner */
   /* 1.2 - Receta general */
+}
+@media (max-width: 700px) {
+  #recepies body {
+    margin: 0;
+    width: 100%;
+  }
 }
 #recepies .general-container {
   display: flex;
@@ -777,6 +782,15 @@ a {
 @media (max-width: 450px) {
   #recepies .recipe-details {
     display: flex;
+    margin: 0;
+  }
+}
+@media (max-width: 700px) {
+  #recepies .recipe-details ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
   }
 }
 #recepies .recipe-details .social-media-icons {
@@ -785,20 +799,71 @@ a {
   flex-direction: column;
   list-style: none;
 }
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   #recepies .recipe-details .social-media-icons {
     display: flex;
+    width: 100%;
+    margin: 0;
     flex-direction: row;
   }
 }
 #recepies .recipe-details .social-media-icons .margin-icons {
   margin: 20px;
-  /*Estilar los íconos, no sé cómo hacerlo*/
+}
+#recepies .recipe-details .social-media-icons .margin-icons .fa-facebook-f {
+  background-color: blue;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+#recepies .recipe-details .social-media-icons .margin-icons .fa-twitter {
+  background-color: lightblue;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+#recepies .recipe-details .social-media-icons .margin-icons .fa-google-plus-g {
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+#recepies .recipe-details .social-media-icons .margin-icons .fa-instagram {
+  background-color: burlywood;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
+}
+#recepies .recipe-details .social-media-icons .margin-icons .fa-pinterest-p {
+  background-color: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
 }
 #recepies .recipe-details .recipe-img {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+@media (max-width: 700px) {
+  #recepies .recipe-details .recipe-img {
+    flex-direction: column;
+  }
 }
 #recepies .recipe-details .recipe-img img {
   width: 600px;
@@ -840,7 +905,6 @@ a {
 #recepies .recipe-details .recipe-text {
   display: flex;
   flex-direction: column;
-  width: 600px;
   align-items: flex-start;
   padding-left: 10px;
   justify-content: center;
@@ -848,6 +912,13 @@ a {
 @media (max-width: 700px) {
   #recepies .recipe-details .recipe-text {
     width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  #recepies .recipe-details .recipe-text .important-info {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
   }
 }
 #recepies .recipe-details .recipe-steps {

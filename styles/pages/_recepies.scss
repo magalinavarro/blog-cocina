@@ -12,8 +12,7 @@
         1.2.5 - Proceso de la receta.
         1.2.6 - Breve descripción.
         1.2.7 - Frase citada.
-        1.2.8 - Lista de ingredientes.
-        
+        1.2.8 - Lista de ingredientes.      
 
 */
 
@@ -28,6 +27,13 @@
     width: 100%;
 
 /*CONTENEDOR GENERAL*/
+
+    body {
+        @media (max-width: 700px) {
+            margin: 0;
+            width: 100%;
+        }
+    }
 
     .general-container {
         display: flex;
@@ -95,25 +101,88 @@
                 flex-grow: 1;
                 justify-content: center;
                 @media (max-width: 450px) {
-                    display: flex;   
+                    display: flex;
+                    margin: 0; 
                 }
 
         /* 1.2.1 - Íconos de redes sociales */
+
+                    ul {
+                        @media (max-width: 700px) {
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+                            margin: 0;
+                        }
+                    }
 
                     .social-media-icons {
                         display: flex;
                         justify-content: space-around;
                         flex-direction: column;
                         list-style: none;
-                        @media (max-width: 450px) {
+                        @media (max-width: 700px) {
                             display: flex;
+                            width: 100%;
+                            margin: 0;
                             flex-direction: row;   
-                        }                     
+                        }
+                        
                         
                             .margin-icons {
                                 margin: 20px;
 
-                                /*Estilar los íconos, no sé cómo hacerlo*/
+                                
+                                .fa-facebook-f {
+                                    background-color: blue;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-twitter {
+                                    background-color: lightblue;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-google-plus-g {
+                                    background-color: red;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-instagram {
+                                    background-color: burlywood;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+
+                                .fa-pinterest-p {
+                                    background-color: red;
+                                    color: white;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    line-height: 30px;
+                                }
+                        
                             }
                         }
 
@@ -122,7 +191,10 @@
                         .recipe-img {
                             display: flex;
                             justify-content: center;
-                            margin-top: 50px;                   
+                            margin-top: 50px;
+                                @media (max-width: 700px) {
+                                    flex-direction: column;
+                                }                
                             
                                 img {
                                     width: 600px;
@@ -172,12 +244,19 @@
             .recipe-text {
                 display: flex;
                 flex-direction: column;
-                width: 600px;
                 align-items: flex-start;
                 padding-left: 10px;
                 justify-content: center;
                 @media (max-width: 700px) {
                         width: 100%;
+                    }
+
+                    .important-info {
+                        @media (max-width: 700px) {
+                            width: 100%;
+                            margin-top: 10px;
+                            margin-left: 30px;
+                        }
                     }
             }      
 
