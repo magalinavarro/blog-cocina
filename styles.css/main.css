@@ -703,7 +703,6 @@ a {
   font-family: "IBM Plex Mono", monospace;
   color: #686666;
   width: 100%;
-  /*CONTENEDOR GENERAL*/
   /* 1.1 - Ícono y texto bajo la foto del banner */
   /* 1.2 - Receta general */
 }
@@ -717,11 +716,6 @@ a {
   display: flex;
   justify-items: flex-start;
   flex-grow: 1;
-}
-@media (max-width: 900px) {
-  #recepies .route-page {
-    flex-direction: row;
-  }
 }
 #recepies .route-page .home-and-archive {
   font-weight: bold;
@@ -746,6 +740,7 @@ a {
   flex-grow: 1;
   justify-content: center;
   /* 1.2.1 - Íconos de redes sociales */
+  /*Estilar los íconos, no sé cómo hacerlo*/
   /* 1.2.2 - Foto de la receta */
   /* 1.2.3 - Autora y fecha */
   /* 1.2.4 - Likes, comentarios y share */
@@ -759,7 +754,21 @@ a {
 }
 #recepies .recipe-details .social-media-icons .margin-icons {
   margin: 20px;
-  /*Estilar los íconos, no sé cómo hacerlo*/
+}
+#recepies .recipe-details .social-media-icons .margin-icons #icon-facebook {
+  background: #3b5998;
+}
+#recepies .recipe-details .social-media-icons .margin-icons #icon-twitter {
+  background: #00abf0;
+}
+#recepies .recipe-details .social-media-icons .margin-icons #icon-googleplus {
+  background: #d95232;
+}
+#recepies .recipe-details .social-media-icons .margin-icons #icon-instagram {
+  background: #666666;
+}
+#recepies .recipe-details .social-media-icons .margin-icons #icon-pinterest {
+  background: #ae181f;
 }
 #recepies .recipe-details .recipe-img {
   display: flex;
@@ -768,17 +777,6 @@ a {
 }
 #recepies .recipe-details .recipe-img img {
   width: 600px;
-}
-@media (max-width: 900px) {
-  #recepies .recipe-details .recipe-img img {
-    width: 49%;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 400px) {
-  #recepies .recipe-details .recipe-img img {
-    width: 100%;
-  }
 }
 #recepies .recipe-details .img-radius {
   border-radius: 40px 40px 40px 40px;
@@ -808,7 +806,7 @@ a {
   flex-direction: column;
   width: 600px;
   align-items: flex-start;
-  padding-left: 10px;
+  margin-left: 20px;
   justify-content: center;
 }
 #recepies .recipe-details .recipe-steps {
