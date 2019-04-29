@@ -1001,6 +1001,7 @@ a {
   font-family: "IBM Plex Mono", monospace;
   color: #686666;
   width: 100%;
+  /*CONTENEDOR GENERAL*/
   /* 1.1 - Ícono y texto bajo la foto del banner */
   /* 1.2 - Receta general */
 }
@@ -1019,6 +1020,12 @@ a {
           align-items: flex-start;
 }
 
+@media (max-width: 700px) {
+  #recepies .general-container {
+    width: 100%;
+  }
+}
+
 #recepies .route-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,12 +1040,43 @@ a {
   font-weight: bold;
 }
 
+@media (max-width: 450px) {
+  #recepies .route-page .home-and-archive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #recepies .route-page #home-icon {
   padding-top: 23px;
 }
 
 #recepies .route-page .single-post-blog {
   color: #686666;
+}
+
+@media (max-width: 450px) {
+  #recepies .route-page .single-post-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#recepies section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #recepies .content-container {
@@ -1053,6 +1091,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px;
+}
+
+@media (max-width: 450px) {
+  #recepies .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 #recepies .recipe-details {
@@ -1078,6 +1125,14 @@ a {
   /* 1.2.5 - Proceso de la receta */
 }
 
+@media (max-width: 450px) {
+  #recepies .recipe-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 #recepies .recipe-details .social-media-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,29 +1146,21 @@ a {
   list-style: none;
 }
 
+@media (max-width: 450px) {
+  #recepies .recipe-details .social-media-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 #recepies .recipe-details .social-media-icons .margin-icons {
   margin: 20px;
-  /*Estilar los íconos, no sé cómo hacerlo
-
-                                #icon-facebook {
-                                    background:#3b5998;
-                                }
-                            
-                                #icon-twitter {
-                                    background: #00abf0;
-                                }
-
-                                #icon-googleplus {
-                                    background: #d95232;
-                                }
-                            
-                                #icon-instagram {
-                                    background: #666666;
-                                }
-
-                                #icon-pinterest {
-                                    background: #ae181f;
-                                } */
+  /*Estilar los íconos, no sé cómo hacerlo*/
 }
 
 #recepies .recipe-details .recipe-img {
@@ -1130,6 +1177,12 @@ a {
   width: 600px;
 }
 
+@media (max-width: 700px) {
+  #recepies .recipe-details .recipe-img img {
+    width: 100%;
+  }
+}
+
 #recepies .recipe-details .img-radius {
   border-radius: 40px 40px 40px 40px;
 }
@@ -1144,6 +1197,13 @@ a {
   margin-left: 50px;
   margin-top: 30px;
   width: 600px;
+}
+
+@media (max-width: 700px) {
+  #recepies .recipe-details .news-info {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 #recepies .recipe-details .info-details {
@@ -1188,6 +1248,12 @@ a {
           justify-content: center;
 }
 
+@media (max-width: 700px) {
+  #recepies .recipe-details .recipe-text {
+    width: 100%;
+  }
+}
+
 #recepies .recipe-details .recipe-steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1220,6 +1286,15 @@ a {
 #recepies .recipe-details .recipe-steps .quote {
   font-weight: bold;
   margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+  #recepies .recipe-details .recipe-steps .quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
 }
 
 #recepies .recipe-details .recipe-steps .author-name {
