@@ -74,7 +74,7 @@
 }
 
     .header-image-container {
-        justify-content: center;
+        justify-content: center; /*esta propiedad no se cumple si no asignamos primero display: flex al elemento*/
         width: 100%;
 
             img {
@@ -102,7 +102,7 @@
             display: flex;   
         }
 
-        h4 {
+        h4 {/*flexbox no funciona en encabezados ya que no son elementos contenedores*/
             display: flex;
             align-items: flex-end;              
         }
